@@ -1,8 +1,8 @@
 # Boost portable C++ libraries
 
-[Boost](https://www.boost.org/) is a collection of approximately 80 different libraries that have been extensively peer reviewed by the C++ community.  The goal of the Boost project is to provide a useful set of portable external libraries that are fully compatible with and extensions of the C++ Standard Library.  About 10 of the Boost libraries have actually been included into the C++ standard and implemented in recent compilers.  For example, in the C++11 standard, many libraries from Boost were included in the language standard (e.g., <thread>, <random>, <regex>, <array>, <bind>).
+[Boost](https://www.boost.org/) is a collection of approximately 80 different libraries that have been extensively peer reviewed by the C++ community.  The goal of the Boost project is to provide a useful set of portable external libraries that are fully compatible with and extensions of the C++ Standard Library.  About 10 of the Boost libraries have actually been included into the C++ standard and implemented in recent compilers.  For example, in the C++11 standard, many libraries from Boost were included in the language standard (e.g., thread, random, regex, array, bind).
 
-The following example demonstrates how to compile a program that uses Boost.Filesystem.  Note that this library was added to the C++17 standard, but demonstrates how to build projects with Boost.
+The following example demonstrates how to compile a program that uses Boost.Filesystem.  Note that this library was added to the C++17 standard, but the source code demonstrates how to build projects with Boost.
 
 ## Installation on CCV
 
@@ -40,7 +40,7 @@ Next, after you create the executable, you must link your code to the libraries 
 target_link_libraries(ex14 ${Boost_LIBRARIES})
 ```
 
-CMake can also set various environmental variables so you can control the Boost library build process.  The following commands can be added to your `CMakeLists.txt` file or adapted to suit your needs.
+CMake can also set various environmental variables so you can control the Boost library build process.  The following commands can be added to your `CMakeLists.txt` file and adapted to suit your needs.
 
 ```
 set(Boost_USE_STATIC_LIBS OFF)
